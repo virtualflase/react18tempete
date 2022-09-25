@@ -29,7 +29,7 @@ module.exports = {
   },
   rules: {
     'no-debugger': 'warn',
-    'no-console': 'warn',
+    'no-console': 'off',
     // 'import/first': 'error',
     // 'react/prop-types': 'off',
     'promise/param-names': 0,

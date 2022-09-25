@@ -4,9 +4,13 @@ import '@blueprintjs/icons/lib/css/blueprint-icons.css';
 import '@blueprintjs/core/lib/css/blueprint.css';
 import logo from './logo.svg';
 import { FocusStyleManager } from '@blueprintjs/core';
+import { useEffect } from 'react';
 // 只有在按tab的情况下才展示focus框
 FocusStyleManager.onlyShowFocusOnTabs();
 function App() {
+  useEffect(() => {
+    console.log('process.env', process.env);
+  }, []);
   return (
     <div className="App">
       <header className="App-header">

@@ -25,8 +25,9 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "cross-env REACT_APP_ENV=dev react-scripts start",
+    "start:prod": "cross-env REACT_APP_ENV=prod react-scripts start",
+    "build": "cross-env REACT_APP_ENV=prod react-scripts build",
     "test": "react-scripts test",
     "lint": "eslint src --fix --ext .ts,.tsx ",
     "eject": "react-scripts eject"
@@ -46,6 +47,7 @@
   "devDependencies": {
     "@typescript-eslint/parser": "^5.38.0",
     "babel-eslint": "^10.1.0",
+    "cross-env": "^7.0.3",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "prettier": "^2.7.1",
